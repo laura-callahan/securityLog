@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<TITLE>Company Logbook</TITLE>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="landing">
+
+	<div class="flexWrapper">
+
+		<h3>Welcome to our Denver campus.</h3>
+		<h3>Your safety and security is of utmost importance.</h3>
+
+	</div>
+	<div class="flexBottom">
+		<div>
+			<a href="www.company.com">www.company.com</a>
+			<div>Follow us @Company</div>
+			<img src="images/fbIcon.png">
+			<img src="images/twitterIcon.png">
+			<img src="images/linkedinIcon.png">
+			<div class="small">&copy; 2016 Company</div>
+		</div>
+		<a href="securityAgreement.html"><img class="nextBtn" src="images/nextBtn.png"></a>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			images = new Array('images/homeBg.png', 'images/homeBg2.png', 'images/homeBg3.png');
+			var nextimage=0;
+			slideshow();
+			
+			function slideshow(){
+				if(nextimage>=images.length){nextimage=0;}
+				//setTimeout calls function after set # miliseconds
+				$('.landing').css('background-image','url("'+images[nextimage++]+'")');
+				var timeout = setTimeout(slideshow,5500);
+			}
+
+		});
+	</script>
+</body>
+
+</html>

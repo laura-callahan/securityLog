@@ -1,0 +1,160 @@
+@font-face{
+	font-family: Guardian Sans;
+	src: url("../fonts/Guardian Sans-Regular.otf") format("opentype");
+	font-weight: normal;
+}
+@font-face{
+	font-family: Guardian Sans;
+	font-weight: bold;
+	src: url("../fonts/Guardian Sans-Bold.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Guardian Sans;
+	font-weight: 100;
+	src: url("../fonts/Guardian Sans-Light.otf") format("opentype");
+}
+body, html{
+	height:95%;
+	font-family: Guardian Sans, Arial;
+	transition: background 1s linear;
+}
+.landing{
+	background: url(homeBg.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.flexWrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-flow: row wrap;
+	height: 90%;
+}
+.flexWrapper img{
+	margin-bottom: 5%;
+}
+.flexWrapper h3{
+	width: 100%;
+	text-align: center;
+	margin:auto;
+}
+
+.flexBottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin:0 5% 0 5%;
+	/*
+	align-items: center;
+	align-content: center;*/
+}
+
+.flexBottom div{
+	color:white;
+}
+.flexBottom a{
+	color:white;
+}
+/*first icon doesn't need left margin*/
+.flexBottom div img{
+	margin:10% 5% 5% 0;
+}
+
+.flexBottom div img:not(:first-of-type){
+	margin:10% 5% 5% 5%;	
+}
+
+.small{
+	margin-top:10%;
+	font-size: 0.6em;
+}
+
+.nextBtn, .agreeBtn{
+	float: right;
+	margin-right:5%;
+}
+.submitBtn{
+	float:right;
+}
+body h3{
+	font-weight:100;
+	color:white;
+}
+
+hr{
+	border-color: black;
+}
+
+body h1, h4{
+	color:#4314c3;
+}
+
+body ul li {
+	color: #767676;
+	font-size: 1.3em;
+}
+.flexWrapperSec{
+	margin-top:3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexWrapperSec span{
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.centerHeader{
+	align-self: center;
+}
+
+.form-control{
+	font-size: 1.2em;
+}
+/*button {
+	float: right;
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     cursor: pointer;
+     }*/
+     .flexWrapperSec a{
+     	font-size: 1.2em;
+     	font-family: Guardian Sans, Arial;
+     }
+     .time{
+     	font-size: 1.2em;
+     	color: #767676;
+     }
+
+     .thankYou div .target{
+     	font-size: 2.0em;
+     	color: #767676;
+     }
+     .thankYou h2{
+     	color:#767676;
+     	font-size: 2.8em;
+     }
+
+     .thankYou h1{
+     	font-size: 5em;
+     }
+
+     .thankYou img{
+     	position:relative;
+     }
+
+     .thankYou .text{
+     	position:absolute;
+     	top:20%;
+     	left: 30%;
+     }
+
+     /*keeps alignment in top bar by hiding the back button*/
+     .thankYou .glyphicon{
+     	visibility: hidden;
+     }
