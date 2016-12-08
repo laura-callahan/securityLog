@@ -1,22 +1,6 @@
-@font-face{
-	font-family: Guardian Sans;
-	src: url("../fonts/Guardian Sans-Regular.otf") format("opentype");
-	font-weight: normal;
-}
-@font-face{
-	font-family: Guardian Sans;
-	font-weight: bold;
-	src: url("../fonts/Guardian Sans-Bold.otf") format("opentype");
-}
-
-@font-face{
-	font-family: Guardian Sans;
-	font-weight: 100;
-	src: url("../fonts/Guardian Sans-Light.otf") format("opentype");
-}
 body, html{
 	height:95%;
-	font-family: Guardian Sans, Arial;
+	font-family: Arial;
 	transition: background 1s linear;
 }
 .landing{
